@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica: Ingeniería de Prompts (R-T-C-F)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+        .header-section {
+            background-color: #00bcd4; /* Azul Turquesa */
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header-section h1 {
+            font-size: 2.8em;
+            margin-bottom: 0.2em;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 12px 25px;
+            background-color: #fbbc05;
+            color: #333;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .back-link:hover {
+            background-color: #e0ac05;
+            transform: translateY(-2px);
+        }
+        h2 {
+            color: #00bcd4;
+            font-size: 2em;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            font-weight: 600;
+            border-bottom: 2px solid #e6e6e6;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #34a853;
+            font-size: 1.5em;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+            font-weight: 600;
+        }
+        .prompt-guidance {
+            background-color: #e0f7fa;
+            border-left: 5px solid #00bcd4;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        .prompt-guidance strong {
+            color: #1a73e8;
+        }
+        .challenge-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .challenge-box .goal {
+            font-style: italic;
+            color: #d90f0a;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 97%;
+            min-height: 150px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 1em;
+            resize: vertical;
+        }
+        .practice-button {
+            display: block;
+            background-color: #d90f0a; /* Rojo llamativo */
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 1.1em;
+        }
+        .practice-button:hover {
+            background-color: #a30b08;
+            transform: translateY(-2px);
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .image-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-section img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="header-section">
+        <h1>🛠️ Práctica Guiada: Ingeniería de Prompts R-T-C-F</h1>
+        <p>Aplica la estructura clave y obtén recursos didácticos de inmediato</p>
+    </div>
+
+    <div class="container">
+        <a href="tema3.html" class="back-link">⬅️ Volver a Teoría de Prompts</a>
+
+        <div class="image-section">
+            
+            <p style="font-size: 0.9em; color: #777; margin-top: 10px;">
+                <em>La práctica deliberada transforma el conocimiento en habilidad.</em>
+            </p>
+        </div>
+
+        <h2>Recordatorio: La Estructura R-T-C-F</h2>
+        <div class="prompt-guidance">
+            <p>Un prompt eficiente es aquel que no deja espacio a la ambigüedad. Recuerda incluir siempre:</p>
+            <ul>
+                <li><strong>R</strong>ol: ¿Quién es Gemini? (Ej: Diseñador de actividades, historiador experto).</li>
+                <li><strong>T</strong>area: ¿Qué debe hacer? (Ej: Crear 5 preguntas, redactar una rúbrica).</li>
+                <li><strong>C</strong>ontexto: Datos y restricciones (Ej: Para alumnos de 12 años, solo sobre el Artículo 3).</li>
+                <li><strong>F</strong>ormato: Cómo debe entregar la respuesta (Ej: Tabla, lista numerada, código HTML).</li>
+            </ul>
+        </div>
+        
+        <h2>Desafío 1: Humanidades y Ciencias Sociales</h2>
+        <div class="challenge-box">
+            <h3>Objetivo: Crear un recurso de debate guiado</h3>
+            <p>
+                **Escenario:** Necesitas preparar un debate en tu clase de Geografía de 3º de Secundaria sobre el tema de los **impactos del cambio climático en las grandes ciudades de Latinoamérica**.
+            </p>
+            <p class="goal">
+                **Tu Meta:** Escribe un prompt para Gemini que le pida generar **5 argumentos a favor** y **5 argumentos en contra** del desarrollo urbano sostenible como solución al problema. El resultado debe ser entregado en una **tabla con dos columnas (A Favor / En Contra)**, y el tono debe ser apropiado para un estudiante de 15 años.
+            </p>
+            <p><strong>Tu Prompt (Redáctalo aquí):</strong></p>
+            <textarea id="promptDesafio1" placeholder="Ej: Actúa como un experto en debate..."></textarea>
+        </div>
+
+        <h2>Desafío 2: Matemáticas y Ciencias Naturales</h2>
+        <div class="challenge-box">
+            <h3>Objetivo: Generar ejercicios de aplicación práctica</h3>
+            <p>
+                **Escenario:** Estás enseñando la ley de la gravitación universal en tu clase de Física. Quieres que los alumnos apliquen la fórmula a un escenario fuera del Sistema Solar, para despertar su curiosidad.
+            </p>
+            <p class="goal">
+                **Tu Meta:** Escribe un prompt para Gemini que le pida generar un **problema numérico avanzado** sobre la fuerza gravitatoria entre **dos exoplanetas hipotéticos**. El prompt debe incluir los **datos** (masas y distancia) en notación científica. La respuesta debe incluir el **procedimiento paso a paso** y la **solución final**.
+            </p>
+            <p><strong>Tu Prompt (Redáctalo aquí):</strong></p>
+            <textarea id="promptDesafio2" placeholder="Ej: Eres un profesor de física avanzada..."></textarea>
+        </div>
+
+        <p style="text-align: center; margin-top: 40px; font-weight: 600;">
+            Una vez que hayas redactado tus prompts, cópialos en la herramienta de Gemini para evaluar la calidad de los resultados.
+        </p>
+
+        <a href="https://gemini.google.com/" target="_blank" class="practice-button">Abrir Google Gemini para Probar mis Prompts</a>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2023 Curso Google Gemini para Docentes. La práctica hace al maestro.</p>
+    </div>
+</body>
+</html>

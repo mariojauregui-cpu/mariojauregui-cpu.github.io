@@ -51,8 +51,9 @@
             color: #555;
         }
         .menu-grid {
+            /* Adaptado para 4 elementos */
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
             gap: 25px;
         }
         .menu-item {
@@ -83,6 +84,15 @@
             font-size: 2em;
             color: #333;
         }
+        /* Estilo especial para el módulo de práctica */
+        .menu-item.practice {
+            background-color: #fff5e5; /* Fondo claro para destacar */
+            border: 2px solid #fbbc05;
+        }
+        .menu-item.practice h3 {
+             color: #d90f0a; /* Rojo para práctica/acción */
+        }
+
         .menu-item h3 {
             color: #34a853;
             font-size: 1.5em;
@@ -177,7 +187,7 @@
             </div>
         </div>
 
-        <h2>📚 Temario del Curso</h2>
+        <h2>📚 Temario del Curso y Práctica</h2>
         <div class="menu-grid">
             <div class="menu-item">
                 <div class="icon-placeholder">🤖</div>
@@ -188,16 +198,23 @@
 
             <div class="menu-item">
                 <div class="icon-placeholder">💎</div>
-                <h3>Tema 2: Creando tus Propios "Gems" Educativos</h3>
-                <p>Aprende a personalizar versiones de Gemini (Gems) para tareas docentes específicas, como asistentes de revisión de textos, generadores de ideas para proyectos o simuladores de diálogos históricos.</p>
+                <h3>Tema 2: Creando tus Propios "Gems"</h3>
+                <p>Aprende a personalizar versiones de Gemini (Gems) para tareas docentes específicas, como asistentes de revisión de textos o simuladores de diálogos históricos.</p>
                 <a href="tema2.html">Crear Gems</a>
             </div>
 
             <div class="menu-item">
                 <div class="icon-placeholder">📝</div>
-                <h3>Tema 3: El Arte del "Prompt" Perfecto en el Aula</h3>
-                <p>Domina las técnicas de ingeniería de prompts para obtener respuestas precisas y útiles de Gemini, desde la creación de planes de clase hasta la generación de ejercicios interactivos.</p>
+                <h3>Tema 3: El Arte del "Prompt" Perfecto</h3>
+                <p>Domina las técnicas de ingeniería de prompts (R-T-C-F) para obtener respuestas precisas y útiles de Gemini, generando ejercicios interactivos de alta calidad.</p>
                 <a href="tema3.html">Dominar Prompts</a>
+            </div>
+            
+            <div class="menu-item practice">
+                <div class="icon-placeholder" style="background-color: #fbbc05;">🎯</div>
+                <h3>Práctica Final: Generador de Recursos</h3>
+                <p>Pon a prueba tus conocimientos de R-T-C-F con desafíos reales. Redacta prompts para crear rúbricas, problemas y argumentos históricos de inmediato.</p>
+                <a href="practica.html" style="background-color: #d90f0a;">¡Ir a la Práctica Ahora!</a>
             </div>
         </div>
     </div>
