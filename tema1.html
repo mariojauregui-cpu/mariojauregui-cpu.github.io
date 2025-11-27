@@ -126,6 +126,31 @@
             color: #d90f0a;
             margin-right: 15px;
         }
+        /* Estilos para la tabla comparativa */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .comparison-table th {
+            background-color: #f0f8ff; /* Color institucional */
+            color: #1a73e8;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .comparison-table td strong {
+            color: #333;
+        }
+        
         .footer {
             text-align: center;
             padding: 30px;
@@ -162,21 +187,55 @@
         <p>
             <strong>Google Gemini</strong> es mucho más que un simple modelo de lenguaje; es una familia de modelos de inteligencia artificial **multimodal**. Esto significa que puede procesar y entender diversos tipos de información de manera simultánea: no solo texto, sino también imágenes, audio, video y código. Su diseño busca emular una comprensión más cercana a la forma en que los humanos perciben el mundo, lo que lo hace excepcionalmente versátil.
         </p>
-        <p>
-            Gemini se presenta en diferentes tamaños, adaptándose a diversas necesidades:
-        </p>
-        <ul>
-            <li>**Gemini Ultra:** El modelo más grande y capaz, ideal para tareas muy complejas que requieren un razonamiento sofisticado.</li>
-            <li>**Gemini Pro:** Optimizado para escalar una amplia gama de tareas, ofreciendo un equilibrio entre capacidad y eficiencia, perfecto para muchas aplicaciones educativas.</li>
-            <li>**Gemini Nano:** Diseñado para ejecutarse directamente en dispositivos, permitiendo experiencias de IA más rápidas y privadas en herramientas cotidianas.</li>
-        </ul>
-
+        
         <div class="image-section">
             
             <p style="font-size: 0.9em; color: #777; margin-top: 10px;">
                 <em>La clave: La capacidad multimodal de Gemini para procesar diferentes tipos de datos simultáneamente.</em>
             </p>
         </div>
+
+        <h2>Comparativa: Gemini Personal vs. Gemini Institucional (Educación)</h2>
+        <p>
+            Como docente, es fundamental entender las diferencias entre usar Gemini con una **cuenta personal de Google** (gratuita) y usarla con una **cuenta institucional** proporcionada por el centro educativo (Google Workspace for Education). Las diferencias radican en la seguridad, la integración y las funcionalidades adicionales.
+        </p>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Gemini Personal (Gratuito)</th>
+                    <th>Gemini con Cuenta Institucional (Workspace for Education)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Propósito Principal</strong></td>
+                    <td>Uso general, ocio, productividad personal básica.</td>
+                    <td>Diseñado para la **Educación**, productividad y soporte curricular.</td>
+                </tr>
+                <tr>
+                    <td><strong>Integración con Herramientas</strong></td>
+                    <td>Integración limitada (Gmail, Docs, Maps) con configuración manual.</td>
+                    <td>**Integración profunda** y nativa con Google Classroom, Docs, Drive, y Meet.</td>
+                </tr>
+                <tr>
+                    <td><strong>Seguridad y Privacidad</strong></td>
+                    <td>Las conversaciones se almacenan y pueden ser utilizadas para mejorar el modelo (A menos que se desactive la actividad).</td>
+                    <td>**Mayor Privacidad:** Las interacciones del usuario generalmente no se utilizan para entrenar los modelos, cumpliendo con las políticas de datos educativos.</td>
+                </tr>
+                <tr>
+                    <td><strong>Funcionalidades Adicionales</strong></td>
+                    <td>Acceso al modelo base (Gemini Pro) y a funciones estándar.</td>
+                    <td>Acceso a modelos más potentes (como Gemini Advanced, dependiendo de la licencia) y a **herramientas específicas para educadores** (ej. ayuda para calificar).</td>
+                </tr>
+                <tr>
+                    <td><strong>Recomendación para Docentes</strong></td>
+                    <td>Útil para exploración y uso ocasional.</td>
+                    <td>**Altamente recomendado** por la integración, seguridad y enfoque educativo.</td>
+                </tr>
+            </tbody>
+        </table>
 
         <h2>¿Para qué sirve Google Gemini en la Enseñanza Secundaria?</h2>
         <p>
